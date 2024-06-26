@@ -108,9 +108,10 @@
                     <div class="about-bg" style="background-image:url(assets/images/hero-area/DSC01503.JPG)">
                         <!-- Social Link -->
                         <div class="social-aria">
-                            <a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a target="_blank" href="#"><i class="fab fa-instagram"></i></a>
-                            <a target="_blank" href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/abbas.firdous.3?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/muhammed-abbas/"><i class="fab fa-linkedin"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/abu..zx_?igsh=NHNuY3VpZHY4eHY="><i class="fab fa-instagram"></i></a>
+                            <a target="_blank" href="https://wa.me/918590358670"><i class="fab fa-whatsapp"></i></a>
                         </div>
                         <!-- // Social Link -->
                     </div>
@@ -357,7 +358,6 @@
                 <div class="col-lg-6 ">
                     <div class="section-title text-center">
                         <h2>Contact Me</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
                 </div>
             </div>
@@ -367,26 +367,32 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <!-- Form -->
-                    <form id="contact-form" action="mail.php" method="post" class="contact-form bg-white">
-                        <div class="row">
-                            <div class="col-lg-6 form-group">
-                                <input type="text" class="form-control" name="name" required placeholder="Name">
+                    <form id="contact-form" action="https://api.web3forms.com/submit" method="post" class="contact-form bg-white">
+                        <fieldset>
+                            <div class="row">
+                                <div class="col-lg-6 form-group">
+                                    <input type="hidden" name="access_key" value="a4262795-3666-4910-b1f5-81605763877a" />
+                                    <input type="hidden" name="subject" value="New Submission from Web3Forms"/>
+                                    <input type="hidden" name="redirect" value="https://web3forms.com/success"/>
+                                    <input type="checkbox" name="botcheck" id="" style="display: none" />
+                                    <input type="text" class="form-control" name="name" required placeholder="Name">
+                                </div>
+                                <div class="col-lg-6 form-group">
+                                    <input type="email" class="form-control" name="email" required placeholder="Email">
+                                </div>
                             </div>
-                            <div class="col-lg-6 form-group">
-                                <input type="email" class="form-control" name="email" required placeholder="Email">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="subject" required placeholder="Subject">
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="subject" required placeholder="Subject">
-                        </div>
-
-                        <div class="form-group">
-                            <textarea name="message" id="" class="form-control" required placeholder="Message"></textarea>
-                        </div>
-                        <div class="form-btn text-center">
-                            <button class="button" type="submit">Send Message</button>
-                            <p class="form-message"></p>
-                        </div>
+    
+                            <div class="form-group">
+                                <textarea name="message" id="" class="form-control" required placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-btn text-center">
+                                <button class="button" type="submit" onclick="formSubmit()">Send Message</button>
+                                <p class="form-message"></p>
+                            </div>
+                        </fieldset>
                     </form>
                     <!-- // Form -->
                 </div>
