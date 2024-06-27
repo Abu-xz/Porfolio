@@ -35,7 +35,8 @@ form.addEventListener("submit", function(e) {
 
   // If all validations pass, you can proceed with form submission
   if (name.value.trim() !== "" && email.value.match(email_valid) && phone.value.match(num_valid)) {
-    form.submit();
+    clearFields(); // Clear form fields
+    form.submit(); // Submit the form
   }
 });
 
